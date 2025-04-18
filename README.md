@@ -30,7 +30,7 @@ This project implements a fully local **RAG system** that:
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 
 ### ✅ Step 3: Install Other Dependencies
-pip install -r requirements.txt
+pip install -r `requirements.txt`
 
 ### 🧩 Project Structure
 . <br>
@@ -48,11 +48,11 @@ pip install -r requirements.txt
 
 ### 🔹 1. Build the FAISS Index
 #### Run the FAISS indexer to process your .docx files and save the index:
-RUN: python faiss_client.py
+RUN: `python faiss_client.py`
 
 ##### This will: <br>
 - Chunk all `.docx` files in ./word_files/ <br>
 - Create `faiss_index.index` and `faiss_metadata.json` 
 
 ### 🔹 3. Launch the Gradio UI
-RUN: python gradio_app.py
+RUN: `python gradio_app.py`
