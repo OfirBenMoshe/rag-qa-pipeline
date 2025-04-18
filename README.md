@@ -61,7 +61,8 @@ RUN: `python gradio_app.py` <br>
 Running on local URL: `http://127.0.0.1:7860`
 
 Open the URL in your browser. You’ll see the following interface:
-<!-- images/Screenshot 2025-04-18 204458.png -->
+<!-- images/Gradio.png -->
+![Alt text](images/Gradio.png)
 
 
 ##  🎛️ How to Use the Interface
