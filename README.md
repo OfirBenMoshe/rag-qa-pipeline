@@ -5,7 +5,7 @@ This project implements a fully local **RAG system** that:
 - Extracts structured chunks from `.docx` documents
 - Indexes them using FAISS Vector Database
 - Re-ranks results using a cross-encoder
-- Generates answers using Azure OpenAI (GPT-35-Turbo)
+- Generates answers using Azure OpenAI (GPT-3.5-Turbo)
 - Supports a Gradio UI for interactive querying
 
 ---
@@ -61,7 +61,7 @@ RUN: `python gradio_app.py` <br>
 Running on local URL: `http://127.0.0.1:7860`
 
 Open the URL in your browser. You’ll see the following interface:
-<!-- images/diagram.png -->
+<!-- images/Screenshot 2025-04-18 204458.png -->
 
 
 ##  🎛️ How to Use the Interface
