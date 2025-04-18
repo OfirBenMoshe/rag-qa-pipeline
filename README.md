@@ -1,4 +1,5 @@
-# 🧠 Retrieval-Augmented QA Pipeline (RAG) with FAISS + Azure OpenAI
+## 🧠 Retrieval-Augmented QA Pipeline (RAG) 
+## Using FAISS + Azure OpenAI
 
 This project implements a fully local **RAG system** that:
 - Extracts structured chunks from `.docx` documents
