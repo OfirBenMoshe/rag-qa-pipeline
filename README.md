@@ -14,7 +14,7 @@ This project implements a fully local **RAG system** that:
 
 ### ✅ Step 1: Set Up Python Environment (Python 3.12.3)
 
-a. Create and activate a virtual environment:
+a. Create and activate a virtual environment: \n
 python -m venv venv
 
 b. Activate the venv:
