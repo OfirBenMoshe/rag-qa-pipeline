@@ -55,4 +55,26 @@ RUN: `python faiss_client.py`
 - Create `faiss_index.index` and `faiss_metadata.json` 
 
 ### 🔹 3. Launch the Gradio UI
-RUN: `python gradio_app.py`
+RUN: `python gradio_app.py` <br>
+
+#### This will start a local Gradio server and display a link like: <br>
+Running on local URL: `http://127.0.0.1:7860`
+
+Open the URL in your browser. You’ll see the following interface:
+<!-- images/diagram.png -->
+
+
+##  🎛️ How to Use the Interface
+1. Enter your question in the textbox labeled “Enter your question”.
+
+2. Adjust:
+
+- Top-K Retrieved Chunks: Number of chunks to retrieve from the FAISS vector DB.
+
+- Re-ranker Threshold: Only chunks with a re-ranker score above this value will be kept.
+
+3. Click “Get Answer” and wait a few seconds.
+
+4. The final answer will appear, along with a detailed breakdown of the selected chunk, their scores and metadata.
+
+#### This dynamic setup allows fine control over both the retrieval and re-ranking steps in your RAG pipeline.
