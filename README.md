@@ -14,14 +14,17 @@ This project implements a fully local **RAG system** that:
 
 ### ✅ Step 1: Set Up Python Environment (Python 3.12.3)
 
-a. Create and activate a virtual environment: <br>
-python -m venv venv <br>
-b. Activate the venv: <br>
-source venv/bin/activate  # Or venv\\Scripts\\activate on Windows <br>
-c. allow local script execution: <br>
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass <br>
-d. Then activate again: <br>
-source venv/bin/activate  # Or venv\\Scripts\\activate on Windows <br>
+#### a. Create and activate a virtual environment: <br>
+- python -m venv venv
+
+#### b. Activate the venv: <br>
+- source venv/bin/activate  # Or venv\\Scripts\\activate on Windows <br>
+
+#### c. allow local script execution: <br>
+- Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass <br>
+
+#### d. Then activate again: <br>
+- source venv/bin/activate  # Or venv\\Scripts\\activate on Windows <br>
 
 ### ✅ Step 2: Install PyTorch (CPU version)
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
@@ -30,7 +33,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 pip install -r requirements.txt
 
 ### 🧩 Project Structure
-.
+. <br>
 ├── faiss_client.py        # Handles .docx parsing, chunking, and FAISS indexing <br>
 ├── qa_pipeline.py         # Full RAG pipeline: retrieval, reranking, prompt, and LLM answer <br>
 ├── gradio_app.py          # Gradio interface for querying the system <br>
@@ -47,9 +50,9 @@ pip install -r requirements.txt
 #### Run the FAISS indexer to process your .docx files and save the index:
 RUN: python faiss_client.py
 
-This will: <br>
-Chunk all .docx files in ./word_files/ <br>
-Create faiss_index.index and faiss_metadata.json 
+##### This will: <br>
+- Chunk all .docx files in ./word_files/ <br>
+- Create faiss_index.index and faiss_metadata.json 
 
 ### 🔹 3. Launch the Gradio UI
 RUN: python gradio_app.py
