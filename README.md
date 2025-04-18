@@ -18,13 +18,13 @@ This project implements a fully local **RAG system** that:
 - python -m venv venv
 
 #### b. Activate the venv: <br>
-- source venv/bin/activate  # Or venv\\Scripts\\activate on Windows <br>
+- source venv/bin/activate <br>
 
 #### c. allow local script execution: <br>
 - Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass <br>
 
 #### d. Then activate again: <br>
-- source venv/bin/activate  # Or venv\\Scripts\\activate on Windows <br>
+- source venv/bin/activate <br>
 
 ### ✅ Step 2: Install PyTorch (CPU version)
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
