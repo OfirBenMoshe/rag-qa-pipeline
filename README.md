@@ -37,7 +37,7 @@ pip install -r `requirements.txt`
 ├── `faiss_client.py`       # Handles .docx parsing, chunking, and FAISS indexing <br>
 ├── `qa_pipeline.py`         # Full RAG pipeline: retrieval, reranking, prompt, and LLM answer <br>
 ├── `gradio_app.py`          # Gradio interface for querying the system <br>
-├── `word_files/`            # Folder with your input Word documents (*.docx) <br>
+├── `data_files/`            # Folder with your input Word documents (*.docx) <br>
 ├── `faiss_index.index`      # Saved FAISS vector index (auto-generated) <br>
 ├── `faiss_metadata.json`    # Metadata for each indexed chunk (auto-generated) <br>
 └── `requirements.txt`
