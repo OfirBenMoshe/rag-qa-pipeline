@@ -2,7 +2,7 @@
 
 This project implements a fully local **RAG system** that:
 - Extracts structured chunks from `.docx` documents
-- Indexes them using FAISS
+- Indexes them using FAISS Vector Database
 - Re-ranks results using a cross-encoder
 - Generates answers using Azure OpenAI (GPT-35-Turbo)
 - Supports a Gradio UI for interactive querying
@@ -11,10 +11,18 @@ This project implements a fully local **RAG system** that:
 
 ## 🚀 Setup Instructions
 
-### ✅ Step 1: Set Up Python Environment (Recommended: Python 3.10)
+### ✅ Step 1: Set Up Python Environment (Python 3.12.3)
 
-Create and activate a virtual environment:
+a. Create and activate a virtual environment:
 python -m venv venv
+
+b. Activate the venv:
+source venv/bin/activate  # Or venv\\Scripts\\activate on Windows
+
+c. allow local script execution:
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+d. Then activate again:
 source venv/bin/activate  # Or venv\\Scripts\\activate on Windows
 
 ### ✅ Step 2: Install PyTorch (CPU version)
@@ -39,11 +47,11 @@ pip install -r requirements.txt
 
 ### 🔹 1. Build the FAISS Index
 #### Run the FAISS indexer to process your .docx files and save the index:
-python faiss_client.py
+RUN: python faiss_client.py
 
 This will:
 Chunk all .docx files in ./word_files/
 Create faiss_index.index and faiss_metadata.json
 
 ### 🔹 3. Launch the Gradio UI
-python gradio_app.py
+RUN: python gradio_app.py
